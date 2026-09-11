@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff7f9;
+    color: #2b1b24;
+}
+
+/* ================= NAVBAR ================= */
+
+nav {
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.logo span,
+footer span {
+    color: #ff4f87;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2b1b24;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #ff4f87;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    border-radius: 50px;
+
+    background: linear-gradient(135deg, #ff4f87, #ff8a5c);
+
+    color: white;
+
+    text-decoration: none;
+
+    border: none;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:focus-visible,
+.detail-btn:focus-visible,
+.back:focus-visible {
+    outline: 3px solid #2b1b24;
+    outline-offset: 3px;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 85vh;
+
+    padding: 70px 10%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background:
+        radial-gradient(circle at top left, #ffd6e4, transparent 40%),
+        radial-gradient(circle at bottom right, #ffe1c9, transparent 40%);
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.tag {
+    color: #ff4f87;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #ff4f87;
+}
+
+.hero-text p {
+    line-height: 1.8;
+    color: #6b5960;
+}
+
+.hero-image {
+    width: 420px;
+    height: 420px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 40px;
+
+    transform: rotate(4deg);
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* ================= CATEGORY ================= */
+
+.categories {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.category-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.category {
+    width: 180px;
+
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    color: #2b1b24;
+
+    transition: 0.3s;
+}
+
+.category div {
+    font-size: 50px;
+}
+
+.category:hover {
+    transform: translateY(-10px) rotate(-2deg);
+
+    box-shadow: 0 15px 30px rgba(255,79,135,0.2);
+}
+
+/* ================= PRODUCT PAGE ================= */
+
+.products-page {
+    padding: 80px 10%;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-title h1 {
+    font-size: 45px;
+}
+
+.products-page > h2 {
+    margin: 50px 0 25px;
+    font-size: 30px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product-card {
+    width: min(100%, 280px);
+
+    background: white;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info p {
+    font-size: 13px;
+    color: #777;
+    margin: 10px 0;
+}
+
+.product-info h4 {
+    color: #ff4f87;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.product-info h3 {
+    min-height: 48px;
+}
+
+.product-info p {
+    min-height: 42px;
+}
+
+.detail-btn {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    background: #fff0f5;
+
+    color: #ff4f87;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.detail-btn:hover {
+    background: #ff4f87;
+    color: white;
+}
+
+/* ================= DETAIL PAGE ================= */
+
+.detail-page {
+    min-height: 80vh;
+
+    padding: 80px 10%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 70px;
+}
+
+.detail-image {
+    width: 450px;
+}
+
+.detail-image img {
+    width: 100%;
+
+    border-radius: 35px;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.detail-info {
+    max-width: 500px;
+}
+
+.detail-info h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.detail-info h2 {
+    color: #ff4f87;
+    margin-bottom: 20px;
+}
+
+.detail-info > p {
+    line-height: 1.8;
+    color: #666;
+}
+
+.detail-box {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    margin: 25px 0;
+}
+
+.detail-box p {
+    margin: 10px 0;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    color: #ff4f87;
+    font-weight: 600;
+}
+
+/* ================= ABOUT ================= */
+
+.about {
+    padding: 100px 10%;
+
+    background: #2b1b24;
+
+    color: white;
+}
+
+.about h2 {
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.about > div > p:last-child {
+    max-width: 500px;
+    line-height: 1.8;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    background: #1d1117;
+
+    color: white;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 15px 5%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 60px 7%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .detail-page {
+        flex-direction: column;
+
+        padding: 50px 7%;
+    }
+
+    .detail-image {
+        width: 100%;
+    }
+
+    .detail-info h1 {
+        font-size: 35px;
+    }
+
+    .products {
+        justify-content: center;
+    }
+}
