@@ -32,3 +32,23 @@ document.querySelector("#detail-name").textContent = name;
 document.querySelector("#detail-price").textContent = price;
 document.querySelector("#detail-description").textContent = description;
 document.querySelector("#detail-flavor").textContent = `🍫 Flavor: ${flavor}`;
+
+const drinkKeys = [
+    "iced-chocolate",
+    "jasmine-iced-chocolate",
+    "hojicha",
+    "lotus-biscoff-matcha-latte",
+    "strawberry-matcha-latte",
+    "matcha-latte"
+];
+const isDrink = drinkKeys.includes(key);
+const isLatte = key?.includes("latte");
+const isMatcha = key?.includes("matcha");
+
+const drinkOptions = document.querySelector("#drink-options");
+const milkOptions = document.querySelector("#milk-options");
+const matchaOptions = document.querySelector("#matcha-options");
+
+drinkOptions.hidden = !isDrink;
+milkOptions.hidden = !isLatte;
+matchaOptions.hidden = !isMatcha;
