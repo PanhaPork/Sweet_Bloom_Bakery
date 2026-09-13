@@ -6,7 +6,6 @@ const products = {
     "oreo": ["Oreo 🍪", "oreo.JPG", "$1.50", "Cookies and cream", "Creamy cookie dough topped with real Oreo crunch and a sweet drizzle."],
     "smore": ["S'more 🍪", "s'more.JPG", "$2.00", "Marshmallow and chocolate", "Golden cookie dough packed with toasted marshmallows and chocolate pieces."],
     "monster": ["Monster 🍪", "monster.JPG", "$2.00", "White chocolate and Oreo", "Fun blue cookie dough swirled with white chocolate, Oreo crunch, and sweet fillings."],
-    "hojicha": ["Hojicha 🍵", "Hojicha.JPG", "$3.00", "Roasted green tea", "Smooth roasted hojicha with a warm, nutty tea flavor."],
     "lotus-biscoff": ["Lotus Biscoff 🍪", "lotus biscoff.JPG", "$2.00", "Caramelized biscuit", "Spiced caramelized cookie dough topped with a whole Lotus Biscoff cookie."],
     "dubai-chocolate": ["Dubai Chocolate 🍪", "dubai chocolate.JPG", "$2.50", "Chocolate, pistachio, and kataifi", "A rich chocolate cookie filled with crunchy pistachio kataifi."],
     "dubai-chewy": ["Dubai Chewy 🍪", "Dubai chewy.JPG", "$3.00", "Chocolate and pistachio", "A soft, chewy Dubai-inspired cookie with a rich chocolate base and nutty pistachio finish."],
@@ -27,7 +26,8 @@ const products = {
     "strawberry-hojicha-latte": ["Strawberry Hojicha Latte 🍓", "Stawberry Hojicha latte.JPG", "$3.50", "Strawberry and roasted hojicha", "Smooth roasted hojicha blended with creamy milk and sweet strawberry jam."],
     "jasmine-matcha-latte": ["Jasmine Matcha Latte 🍵", "jasmine matcha latte.JPG", "$3.75", "Jasmine and matcha", "A smooth, creamy matcha latte infused with delicate jasmine notes."],
     "coldwhisk-matcha": ["Coldwhisk Matcha 🍵", "coldwhisk matcha.JPG", "$3.50", "Matcha and oat milk", "Premium matcha whisked with cold oat milk for a creamy, vibrant, umami-rich drink."],
-    "shio-pan": ["Shio Pan (Original) 🥐", "Shio pan(origenal).jpg", "$1.50", "Buttery salted bread", "A soft, buttery Japanese salt bread with a crisp golden outside." ]
+    "classic-tiramisu": ["Classic Tiramisu 🧁", "Classic Tiramisu.jpeg", "$3.50", "Coffee and mascarpone", "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa powder."],
+    "shio-pan": ["Shio Pan (Original) 🥐", "Shio pan(origenal).jpg", "$1.50", "Buttery salted bread", "A soft, buttery Japanese salt bread with a crisp golden outside."]
 };
 
 const key = new URLSearchParams(window.location.search).get("product");
